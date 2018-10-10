@@ -26,12 +26,13 @@ def main(request):
 
     some=Total.objects.only('Total_money')
     somes=list(some)
-    totals=somes.pop()
+    print(somes)
+    #totals=somes.pop()
     sharu=Share.objects.all()
     ok1=0
     oh=Share.objects.all()
     #print(len(oh))
-    dictionary={'Tabs':Tabs,'totals':totals,'tota':tota,'share':sharu}
+    dictionary={'Tabs':Tabs,'tota':tota,'share':sharu}
     if len(oh)!=0:
         hello=friend_share()
         #print(hello)
